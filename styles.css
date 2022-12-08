@@ -1,0 +1,147 @@
+#cs1300-gallery {
+  font-family: 'Geneva', sans-serif; font-size: 25px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  text-align: center;
+  gap: 10px;
+  padding-bottom: 5%;
+  margin-left: 5%;
+  margin-right: 5%;
+}
+
+
+.slider {
+  width: 80%;
+  margin: 0 auto 20px;
+  margin-bottom: 50%;
+  text-align: center;
+}
+
+.slider .photos {
+  position: relative;
+  height: 50%;
+}
+
+.slider .photos img {
+  width: 95%;
+  position: absolute;
+  left: 2.5%;
+  opacity: 0;
+  transition: opacity 1s;
+}
+
+.slider .photos img.shown {
+  opacity: 1;
+}
+
+.prev:before,
+.next:before {
+color: rgb(17, 0, 255);
+font-size: 3rem;
+position: absolute;
+top: 15rem;
+cursor: pointer;
+}
+
+.prev:before {
+content: '<';
+left: 0;
+}
+
+.next:before {
+content: '>';
+right: 0;
+}
+
+.gallery-item-container {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-evenly;
+  align-items: center;
+  gap: 10rem;
+}
+
+.gallery-item { 
+  display: flex;
+  flex-direction: column;
+  margin-bottom: 5%;
+}
+
+.img-item {
+  gap: 10rem;
+  max-width: 100%;
+  max-height: 100%;
+  margin: 3%;
+}
+
+.menu-item-container {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.menu-item { 
+  gap: 10rem;
+  max-width: 70%;
+}
+
+.menu {
+  background-color: rgba(76, 76, 76, 0);
+  overflow: hidden;
+  height: 3.5vw;
+  display: flex;
+  align-items: center;
+  justify-content: space-evenly;
+}
+
+.menu a {
+  float: left;
+  color: #000000;
+  text-align: center;
+  padding: 5vw 1vw;
+  text-decoration: none;
+  font-size: 1.5vw;
+  
+}
+
+.menu div {
+  align-items: center;
+  display: flex;
+  height: 100%;
+  vertical-align: middle;
+}
+
+.menu a:hover {
+  color: black;
+}
+
+.menu a.active {
+  background-color: #ddd;
+  color: black;
+}
+
+.hover-underline-animation {
+  display: inline-block;
+  position: relative;
+  color: #000000;
+}
+
+.hover-underline-animation::after {
+  content: '';
+  position: absolute;
+  width: 100%;
+  transform: scaleX(0);
+  height: 2px;
+  bottom: 0;
+  left: 0;
+  background-color: #000000;
+  transform-origin: bottom right;
+  transition: transform 0.25s ease-out;
+}
+
+.hover-underline-animation:hover::after {
+  transform: scaleX(1);
+  transform-origin: bottom left;
+}
