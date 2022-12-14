@@ -143,7 +143,7 @@
 }
 
 .menu-logo {
-  width: 15%;
+  width: 30%;
   max-height: 100%;
 }
 
@@ -162,7 +162,7 @@
   text-align: center;
   padding: 5vw 1vw;
   text-decoration: none;
-  font-size: 30px;
+  font-size: 25px;
 }
 
 .menu div {
@@ -175,13 +175,13 @@
 
 .menu a:hover {
   color: black;
-  font-size: 30px;
+  font-size: 25px;
 }
 
 .menu a.active {
   background-color: #ddd;
   color: black;
-  font-size: 30px;
+  font-size: 25px;
 }
 
 .hover-underline-animation {
