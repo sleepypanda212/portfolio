@@ -218,7 +218,7 @@
   padding-right: 50px;
   margin: 0;
   width: 100%;
-  background: url(./assets/top.png) no-repeat center center ; 
+  background: url(./assets/top.png) no-repeat center top ; 
   -webkit-background-size: cover;
   -moz-background-size: cover;
   -o-background-size: cover;
@@ -416,7 +416,7 @@ input[type=submit]:hover {
   cursor: pointer;
   border: transparent;
   color: rgb(0, 0, 0);
-  font-size: 15px;
+  font-size: 20px;
   text-decoration: underline;
 }
 
