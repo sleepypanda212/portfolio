@@ -219,7 +219,7 @@
   padding-right: 50px;
   margin: 0;
   width: 100%;
-  background: url(./assets/top.png) no-repeat center top ; 
+  background: url(./assets/top.png) no-repeat center center ; 
   -webkit-background-size: cover;
   -moz-background-size: cover;
   -o-background-size: cover;
@@ -433,7 +433,7 @@ input[type=submit]:hover {
  .container {
     margin: 0;
     padding: 0;
-    padding-bottom: 15%;
+    padding-bottom: 20%;
     background: url(./assets/bottom.png) no-repeat center top ; 
     -webkit-background-size: cover;
     -moz-background-size: cover;
