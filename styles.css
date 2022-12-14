@@ -150,7 +150,7 @@
 .menu {
   background-color: rgba(76, 76, 76, 0);
   overflow: hidden;
-  height: 3.5vw;
+  height: 5vw;
   display: flex;
   align-items: center;
   justify-content: space-evenly;
@@ -162,7 +162,7 @@
   text-align: center;
   padding: 5vw 1vw;
   text-decoration: none;
-  font-size: 15px;
+  font-size: 30px;
 }
 
 .menu div {
@@ -175,13 +175,13 @@
 
 .menu a:hover {
   color: black;
-  font-size: 15px;
+  font-size: 30px;
 }
 
 .menu a.active {
   background-color: #ddd;
   color: black;
-  font-size: 15px;
+  font-size: 30px;
 }
 
 .hover-underline-animation {
