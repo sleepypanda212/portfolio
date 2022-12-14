@@ -1,36 +1,54 @@
 <!DOCTYPE html>
 <html lang="en">
 <body style="background-color:rgba(255, 255, 255, 0.905);"></body>
+<script src="https://kit.fontawesome.com/4fb8f92acd.js" crossorigin="anonymous"></script>
 
 <head>
+  <link rel="preconnect" href="https://fonts.googleapis.com"><link rel="preconnect" href="https://fonts.gstatic.com" crossorigin><link href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@300&display=swap" rel="stylesheet">
   <title>About me</title>
   <script src="app.js"></script>
   <link rel="stylesheet" href="styles.css" />
   <style>
     h1 {
-      color: rgb(0, 0, 0);
+      color: rgb(74, 30, 30);
       text-align: left;
+      font-weight: 5%;
+      margin-left: 12%;
+    }
+    h2 {
+      text-align: left; 
+      font-weight: normal;
+      margin-right: 10%;
+    }
+    div2 {
+      font-size: 14px;
+      font-style: normal;
+      text-align: center;
+      margin-left: 20px;
+      margin-right: 20px;
+      color: rgb(109, 123, 95);
+      font-family: Baskerville;
     }
     p {
       margin-bottom: 0;
       font-style: bold;
       font-size: 30px;
-      color: rgb(12, 0, 175);
+      color: rgb(0, 0, 0);
       text-align: left;
+      margin-left: 5%;
     }
-    p2 {
+    p1 {
       margin-bottom: 0;
       font-style: italic;
-      font-size: 22px;
-      color: rgb(12, 0, 175);
+      font-size: 25px;
+      color: rgb(57, 45, 0);
       text-align: left;
     }
     body {
+      padding-top: 5vw;
       color: rgb(0, 0, 0);
       font-size: 25px;
       font-style: italic;
-      padding: 0;
-      margin-top: 0;
     }
     div {
       font-size: 20px;
@@ -39,6 +57,29 @@
       margin-left: 20px;
       margin-right: 20px;
     }
+    div3 {
+      font-size: 15px;
+      font-style: normal;
+      text-align: left;
+      margin-left: 15%;
+      margin-right: 15%;
+    }
+    div4 {
+      font-size: 20px;
+      font-style: normal;
+      text-align: left;
+      margin-left: 20px;
+      margin-right: 20px;
+      margin-top: 5%;
+    }
+    h3 {
+      font-size: 14px;
+      font-style: normal;
+      text-align: left;
+      color: rgb(110, 110, 110);
+      font-family: Baskerville;
+      font-weight: normal;
+    }
     a {
       font-size: 20px;
     }
@@ -46,38 +87,49 @@
       font-size: 20px;
       color: rgb(213, 0, 0);
     }
-    table, th, td {
-      border: 1px solid black;
-    }
-    th, td{
-      padding: 10px;
-      width: 33%;
-    }
-    th {
-      font-size: 20px;
-      background-color: rgb(187, 187, 187);
-    }
-    td{
-      font-size: 20px;
-      text-align: left;
-      vertical-align: top;
-    }
   </style>
 </head>
 
 <body>
   <div id="cs1300-gallery">
-    <div class="menu">
-      <div><a href="./index.html">Work</a></div>
-      <div><a href="./about_me.html">About me</a></div>
-      <div><a href="./contact.html">Contact</a></div>
-    </div>
-    <div>
-      I am an undergraduate studying Computer Science at Brown University who loves digital illustration and art. I am interested in creating
-      accessible and useable interfaces for everyone that are also enjoyable to look at. My inspiration for UIUX designs come from my love 
-      for animation and fashion.
-      <br>
-      When I'm not coding or doing research, you can find me running, watching Studio Ghibli movies, and hoarding around art museums. 
+    <!--nav bar-->
+    <div class="menu-item-container">
+      <div class="menu-item">
+        <a href="./index.html"> <img class="menu-logo" src="./assets/menu_logo1.png" alt="Menu logo" onmouseover="this.src='./assets/menu_logo2.png';" onmouseout="this.src='./assets/menu_logo1.png';">
+        </a>
       </div>
+      <div class="menu-item">
+      <div class="menu">
+        <div class="hover-underline-animation"><a href="./index.html">WORK</a></div>
+        <div class="hover-underline-animation"><a href="./about_me.html">ABOUT ME</a></div>
+        <div class="hover-underline-animation"><a href="./contact.html">CONTACT</a></div>
+      </div></div></div>
+
+      <h1 class="text_shadows">Hello there!</h1>
+    <div3>
+      I am an undergraduate studying Computer Science and Biology at Brown University who loves <span class="underline--magical">digital illustration</span> and <span class="underline--magical">art</span>. I believe that the most
+      <span class="underline--magical">accessible</span> and <span class="underline--magical">useable</span> interfaces <span class="underline--magical">look good</span> as well. To achieve this, I design and digitally illustrate many parts of the interfaces myself in addition 
+      to testing and experimenting different interfaces that are easy to navigate.
+      <br><br>
+      My inspiration for UIUX designs come from my love for animation and fashion, which I try to weave into my projects. Outside of UIUX, I also use 
+      R and python to <span class="underline--magical">study cancer progression using RNA-seq data</span> at a lab at Brown. 
+      <br><br>
+      When I'm not coding or doing research, you can find me playing golf, watching Studio Ghibli movies, hoarding around art museums, and playing with my dog (she's the logo of my portfolio in the top left corner :D).
+      <br><br>
+      </div3>
+    
+      <div4 class="contact-info-2">
+        <div class="contact-left-item">
+        <a href="./assets/resume.pdf" target="_blank"><div3>Resume</div3></a>
+      </div>
+      <div class="flex contact-icons center img-responsive">
+        <a href="https://linkedin.com" target="_blank"><i class="fa fa-linkedin"></i></a>
+        <a href="https://github.com/sleepypanda212" target="_blank"><i class="fa fa-github"></i></a>
+      </div>
+    <div class="contact-right-item">
+        <a href="mailto:sleepy_panda@brown.edu"><div3>sleepy_panda@brown.edu</div3></a>
+    </div>
+  </div4>
+      <div2>Made with ♥ by sleepypanda (2022)</div2>   
   </body>
 </html>

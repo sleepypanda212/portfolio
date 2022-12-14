@@ -1,28 +1,46 @@
 <!DOCTYPE html>
 <html lang="en">
-<body style="background-color:rgba(255, 255, 255, 0.905);"></body>
+<body style="background-color:#ffffff;"></body>
+<script src="https://kit.fontawesome.com/4fb8f92acd.js" crossorigin="anonymous"></script>
 
 <head>
-  <title>CS1300 Iterative Design</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com"><link rel="preconnect" href="https://fonts.gstatic.com" crossorigin><link href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@300&display=swap" rel="stylesheet">
+  <title>CS1300 Portfolio</title>
   <script src="app.js"></script>
   <link rel="stylesheet" href="styles.css" />
   <style>
     h1 {
-      color: rgb(0, 0, 0);
+      color: rgb(133, 66, 66);
       text-align: left;
+      font-weight: 5%;
+    }
+    h2 {
+      text-align: left; 
+      font-weight: normal;
+      margin-right: 10%;
+    }
+    div2 {
+      font-size: 14px;
+      font-style: normal;
+      text-align: center;
+      margin-left: 20px;
+      margin-right: 20px;
+      color: rgb(109, 123, 95);
+      font-family: Baskerville;
     }
     p {
       margin-bottom: 0;
       font-style: bold;
       font-size: 30px;
-      color: rgb(12, 0, 175);
+      color: rgb(0, 0, 0);
       text-align: left;
+      margin-left: 5%;
     }
     p1 {
       margin-bottom: 0;
       font-style: italic;
       font-size: 25px;
-      color: rgb(12, 0, 175);
+      color: rgb(57, 45, 0);
       text-align: left;
     }
     body {
@@ -30,7 +48,7 @@
       font-size: 25px;
       font-style: italic;
       padding: 0;
-      margin-top: 0;
+      margin: 0;
     }
     div {
       font-size: 20px;
@@ -39,6 +57,28 @@
       margin-left: 20px;
       margin-right: 20px;
     }
+    div3 {
+      font-size: 15px;
+      font-style: normal;
+      text-align: left;
+      margin-left: 20px;
+      margin-right: 20px;
+    }
+    div4 {
+      font-size: 15px;
+      font-style: normal;
+      text-align: left;
+      margin-left: 20px;
+      margin-right: 20px;
+    }
+    h3 {
+      font-size: 14px;
+      font-style: normal;
+      text-align: left;
+      color: rgb(110, 110, 110);
+      font-family: Baskerville;
+      font-weight: normal;
+    }
     a {
       font-size: 20px;
     }
@@ -46,62 +86,144 @@
       font-size: 20px;
       color: rgb(213, 0, 0);
     }
-    table, th, td {
-      border: 1px solid black;
-    }
-    th, td{
-      padding: 10px;
-      width: 33%;
-    }
-    th {
-      font-size: 20px;
-      background-color: rgb(187, 187, 187);
-    }
-    td{
-      font-size: 20px;
-      text-align: left;
-      vertical-align: top;
-    }
   </style>
+
+  <link rel = "icon" href = "./assets/logo1.png" type = "image/x-icon">
 </head>
 
 <body>
   <div id="cs1300-gallery">
+    <!--nav bar-->
     <div class="menu-item-container">
     <div class="menu-item">
-      Logo
+      <a href="./index.html"> <img class="menu-logo" src="./assets/menu_logo1.png" alt="Menu logo" onmouseover="this.src='./assets/menu_logo2.png';" onmouseout="this.src='./assets/menu_logo1.png';">
+      </a>
     </div>
     <div class="menu-item">
     <div class="menu">
-      <div class="hover-underline-animation"><a href="./index.html">Work</a></div>
-      <div class="hover-underline-animation"><a href="./about_me.html">About me</a></div>
-      <div class="hover-underline-animation"><a href="./contact.html">Contact</a></div>
+      <div class="hover-underline-animation"><a href="./index.html">WORK</a></div>
+      <div class="hover-underline-animation"><a href="./about_me.html">ABOUT ME</a></div>
+      <div class="hover-underline-animation"><a href="./contact.html">CONTACT</a></div>
     </div></div></div>
-    <h1>Hi! I am a visual web designer integrating accessible interfaces into design and illustration.</h1>
+
+    <!--intro page-->
+    <div class="intro-container">
+      <h1>Hello! I'm Sleepy Panda.</h1>
+      <h2>I am a visual web designer utilizing digital illustration to create accessible and useable interfaces, particularly within the fashion industry. </h2>
+      <h3>Based in ____, Living in Providence.</h3>
+    </div>
+
+    <!--projects-->
+    <div class="body-container">
     <p>Project highlights</p>
-    <div class="gallery-item-container">
-      <div class="gallery-item">
-        <p1>Development</p1>
-        <a href="https://sleepypanda212.github.io/development/"><img class="img-item" src="./assets/development.png" alt="LoFi Wireframe"></a>
-        Designing an online shopping mall for Beary Cute Shop
+
+    <div class="project-container reveal1">
+      <div class="project-title"><p1>Rever</p1></div>
+      <div class="item-12-container">
+      <div class="project-image">
+        <div class="img-zoom">
+          <a href="https://sleepypanda212.github.io/iterative_redesign/" target="_blank" rel="noopener noreferrer"><img class="img-item" src="./assets/iterative_design.jpg" alt="Iterative Design"></a>
+          </div>
+        </div>
+        <div class="item-34-container">
+        <div4 class="project-description">
+          Rever is a start-up aimiing to make returns easier by consolidating returns into one location and allowing consumers to return 
+          their products in 2 clicks. Wthout looking at Rever's interface, I designed a mobile app for Rever, primarily focusing on usability.
+          My three colleagues and I brainstormed an interface that is the most intuitive for users. We received feedbacks from peers and industry
+          experts and analyzed the user testing results to iteratively design an interface that best suits Rever.
+        </div4>
+        <div class="bttn-container">
+          <a href="https://sleepypanda212.github.io/iterative_redesign/" target="_blank" rel="noopener noreferrer"><button class="learn-more-bttn">Learn more</button></a>
+        </div>
       </div>
-      <div class="gallery-item">
-        <p1>Iterative Design</p1>
-        <a href="https://sleepypanda212.github.io/iterative_redesign/"><img class="img-item" src="./assets/iterative_design.png" alt="LoFi Wireframe"></a>
-        Redesigning the startup Rever's app 
-      </div>
-    </div>
-    <div class="gallery-item-container">
-      <div class="gallery-item">
-        <p1>Responsive Redesign</p1>
-        <a href="https://sleepypanda212.github.io/responsive_redesign/"><img class="img-item" src="./assets/responsive_design.png" alt="LoFi Wireframe"></a>
-        Redesigned the Providence nail salon Metro Nail
-      </div>
-      <div class="gallery-item">
-        <p1>Personas & Storyboard</p1>
-        <a href="https://sleepypanda212.github.io/cs1300-hw1/"><img class="img-item" src="./assets/hw1.png" alt="LoFi Wireframe"></a>
-        Created personas and a storyboard to recreate the usage of the gas stove
       </div>
     </div>
+
+      <div class="project-container reveal">
+        <div class="project-title"><p1>Beary Cute Shop</p1></div>
+        <div class="item-12-container-2">
+        <div class="project-image">
+          <div class="img-zoom">
+            <a href="https://sleepypanda212.github.io/development_portfolio/" target="_blank" rel="noopener noreferrer"><img class="img-item" src="./assets/development.jpg" alt="Development"></a>
+          </div>
+        </div>
+        <div class="item-34-container-2">
+          <div4 class="project-description">
+            I designed an online shopping website for Beary Cute Shop that sells various clothing types, accessories, and footwears.
+            This interface explores various filtering and sorting options to enable an easier and a more convenient online shopping
+            experience regardless of the wide range of items. In addition, I explored the integration of digital illustration into
+            the interface to enhance the shopping experience and boost customer satisfaction.
+          </div4>
+          <div class="bttn-container">
+            <a href="https://sleepypanda212.github.io/development_portfolio/" target="_blank" rel="noopener noreferrer"><button class="learn-more-bttn">Learn more</button></a>
+          </div>
+        </div>
+    </div>
+        </div>
+
+      <div class="project-container reveal1">
+        <div class="project-title"><p1>Metro Nail</p1></div>
+        <div class="item-12-container">
+        <div class="project-image">
+          <div class="img-zoom">
+            <a href="https://sleepypanda212.github.io/responsive_redesign/" target="_blank" rel="noopener noreferrer"><img class="img-item" src="./assets/responsive_design.jpg" alt="Responsive Redesign"></a>
+          </div>
+        </div>
+        <div class="item-34-container">
+        <div4 class="project-description">
+            Metro Nail is a small nail salon in Providence. I redesigned the website for Metro Nail to improve a pre-existng interface based on 
+            useability and accessibility that are also responsive. On top of analyzing and resolving accessibility and useability issues, I 
+            designed an interface optimized for different media (phone, tablet, and computer screen sizes).
+        </div4>
+        <div class="bttn-container">
+          <a href="https://sleepypanda212.github.io/responsive_redesign/" target="_blank" rel="noopener noreferrer"><button class="learn-more-bttn">Learn more</button></a>
+        </div>
+      </div>
+      </div>
+    </div>
+
+      <div class="project-container reveal">
+        <div class="project-title"><p1>Gas Stove</p1></div>
+        <div class="item-12-container-2">
+        <div class="project-image">
+          <div class="img-zoom">
+            <a href="https://sleepypanda212.github.io/cs1300-hw1/" target="_blank" rel="noopener noreferrer"><img class="img-item" src="./assets/hw1.jpg" alt="Personas & Storyboard"></a>
+          </div>
+         </div>
+         <div class="item-34-container-2">
+        <div4 class="project-description">
+          Knowing the target audience of the interface is crucial, as even an everyday appliance like a gas stove can have a different meaning 
+          and nuiance to different users depending on the familiarity with the appliance as well as the environment the user is in. I tested 
+          this "personalization of user experience" through experiments and constructed personas and a storyboard based on the persona. 
+        </div4>
+        <div class="bttn-container">
+          <a href="https://sleepypanda212.github.io/cs1300-hw1/" target="_blank" rel="noopener noreferrer"><button class="learn-more-bttn">Learn more</button></a>
+        </div>
+      </div>
+      </div>
+    </div>
+  </div>
+
+    <!-- contact -->
+  <footer>
+    <div class="container">
+      <div class="contact-info">
+              <div class="contact-left-item">
+              <a href="./assets/resume.pdf" target="_blank"><div3>Resume</div3></a>
+            </div>
+            <div class="flex contact-icons center img-responsive">
+              <a href="https://linkedin.com" target="_blank"><i class="fa fa-linkedin"></i></a>
+              <a href="https://github.com/sleepypanda212" target="_blank"><i class="fa fa-github"></i></a>
+            </div>
+          <div class="contact-right-item">
+              <a href="mailto:sleepy_panda@brown.edu"><div3>sleepy_panda@brown.edu</div3></a>
+          </div>
+        </div>
+        <div2>Made with ♥ by sleepypanda (2022)</div2>
+
+      </div>
+    </div>
+  </footer>
+  <!-- contact end -->
   </body>
 </html>

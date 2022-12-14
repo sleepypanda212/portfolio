@@ -1,78 +1,125 @@
 #cs1300-gallery {
-  font-family: 'Geneva', sans-serif; font-size: 25px;
+  font-family: 'Open Sans', sans-serif;
+  font-size: 25px;
   display: flex;
   flex-direction: column;
   justify-content: center;
   text-align: center;
   gap: 10px;
   padding-bottom: 5%;
-  margin-left: 5%;
-  margin-right: 5%;
+  margin-left: 0%;
+  margin-right:0%;
+  gap: 0;
+  overflow: hidden;
 }
 
-
-.slider {
-  width: 80%;
-  margin: 0 auto 20px;
-  margin-bottom: 50%;
-  text-align: center;
+.body-container {
+  background-color: #ffdf00;
+  margin: 0;
+  padding: 0;
 }
 
-.slider .photos {
+.project-container {
+  display: flex;
   position: relative;
-  height: 50%;
+  flex-direction: column;
+  justify-content: space-evenly;
+  align-items: left;
+  flex-wrap: wrap;
+  align-self: flex-start;
+  width: 90%;
+  margin-bottom: 10vw;
+  padding-left: 5%;
+  padding-right: 5%;
 }
 
-.slider .photos img {
-  width: 95%;
-  position: absolute;
-  left: 2.5%;
-  opacity: 0;
-  transition: opacity 1s;
+.project-title {
+  padding-top: 2vw;
+  padding-bottom: 2vw;
 }
 
-.slider .photos img.shown {
-  opacity: 1;
+.project-image {
+  width: 80%;
+  padding: 0 !important;
+  margin: 0;
+  background-color: rgb(55, 32, 32);
+  overflow: hidden;
+  top: 0;
+  left: 0;
 }
 
-.prev:before,
-.next:before {
-color: rgb(17, 0, 255);
-font-size: 3rem;
-position: absolute;
-top: 15rem;
-cursor: pointer;
+.bttn-container {
+  align-self: flex-end;
+  margin-right: 10%;
 }
 
-.prev:before {
-content: '<';
-left: 0;
-}
-
-.next:before {
-content: '>';
-right: 0;
-}
-
-.gallery-item-container {
+.item-12-container {
   display: flex;
   flex-direction: row;
-  justify-content: space-evenly;
-  align-items: center;
-  gap: 10rem;
+  justify-content: space-between;
+  padding: 0;
+  margin-left: 40px;
+  margin-right: 40px;
+  max-width: 100%;
 }
 
-.gallery-item { 
+.item-12-container-2 {
+  display: flex;
+  flex-direction: row;
+  justify-content: flex-end;
+  padding: 0;
+  margin-left: 40px;
+  margin-right: 40px;
+  max-width: 100%;
+}
+
+.item-34-container {
+  position: absolute;
   display: flex;
   flex-direction: column;
-  margin-bottom: 5%;
+  justify-content: space-evenly;
+  align-items: left;
+  flex-wrap: wrap;
+  align-self: flex-start;
+  width: 30%;
+  margin: 0;
+  background-color: rgb(255, 255, 255);
+  padding: 1%;
+  padding-top: 3%;
+  padding-bottom: 3%;
+  align-self: center;
+  box-shadow: 2px 2px 2px 1px rgba(0, 0, 0, 0.2);
+  left: 60%;
+  bottom: 5%;
+}
+
+.item-34-container-2 {
+  position: absolute;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-evenly;
+  align-items: left;
+  flex-wrap: wrap;
+  align-self: flex-start;
+  width: 30%;
+  margin: 0;
+  background-color: rgb(255, 255, 255);
+  padding: 1%;
+  padding-top: 3%;
+  padding-bottom: 3%;
+  align-self: center;
+  box-shadow: 2px 2px 2px 1px rgba(0, 0, 0, 0.2);
+  left: 10%;
+  bottom: 5%;
 }
 
 .img-item {
-  gap: 10rem;
   max-width: 100%;
   max-height: 100%;
-  margin: 3%;
+  margin: 0%;
+  padding: 0;
+  vertical-align: bottom;
+  align-self: center;
 }
 
 .menu-item-container {
@@ -80,11 +127,24 @@ right: 0;
   flex-direction: row;
   justify-content: space-between;
   align-items: center;
+  position: fixed; /* Set the navbar to fixed position */
+  top: 0; /* Position the navbar at the top of the page */
+  width: 100%; /* Full width */
+  background-color: rgba(255, 255, 255, 0.456);
+  left: 0%;
+  margin-left: 0%;
+  padding: 10px;
+  z-index: 1000;
 }
 
 .menu-item { 
   gap: 10rem;
   max-width: 70%;
+}
+
+.menu-logo {
+  width: 15%;
+  max-height: 100%;
 }
 
 .menu {
@@ -102,8 +162,7 @@ right: 0;
   text-align: center;
   padding: 5vw 1vw;
   text-decoration: none;
-  font-size: 1.5vw;
-  
+  font-size: 15px;
 }
 
 .menu div {
@@ -111,15 +170,18 @@ right: 0;
   display: flex;
   height: 100%;
   vertical-align: middle;
+  font-size: 1000px;
 }
 
 .menu a:hover {
   color: black;
+  font-size: 15px;
 }
 
 .menu a.active {
   background-color: #ddd;
   color: black;
+  font-size: 15px;
 }
 
 .hover-underline-animation {
@@ -134,7 +196,7 @@ right: 0;
   width: 100%;
   transform: scaleX(0);
   height: 2px;
-  bottom: 0;
+  bottom: 0.6vw;
   left: 0;
   background-color: #000000;
   transform-origin: bottom right;
@@ -145,3 +207,250 @@ right: 0;
   transform: scaleX(1);
   transform-origin: bottom left;
 }
+
+.intro-container {
+  display: flex;
+  flex-direction: column;
+  align-items: left;
+  padding-top: 10vw;
+  padding-bottom: 23vw;
+  padding-left: 50px;
+  padding-right: 50px;
+  margin: 0;
+  width: 100%;
+  background: url(./assets/top.png) no-repeat center center ; 
+  -webkit-background-size: cover;
+  -moz-background-size: cover;
+  -o-background-size: cover;
+  background-size: cover;
+}
+
+.intro-item { 
+  width: 60%;
+}
+
+.intro-logo { 
+  max-width: 30%;
+}
+
+/* zoom into image on hover*/
+.img-zoom {
+  width: 100%;
+  overflow: hidden;
+  margin: 0 auto;
+  padding: 0;
+}
+
+.img-zoom img {
+  width: 100%;
+  transition: 0.3s all ease-in-out;
+}
+
+.img-zoom:hover img {
+  transform: scale(1.2);
+}
+/* zoom end*/
+
+/* contact */
+.contact-section {
+  height: 20%;
+}
+
+.contact-icons {
+  padding: 25px 0;
+  max-width: 700px;
+  width: 5%;
+
+}
+
+.contact-left-item {
+  text-align: left;
+  width: 30%;
+  align-self: center;
+}
+
+.contact-right-item {
+  text-align: right;
+  width: 30%;
+  align-self: center;
+}
+
+.contact-info {
+  padding-bottom: 150px;
+  padding-top: 0;
+  display: flex;
+}
+
+.contact-info a {
+  color: rgb(77, 62, 8);
+}
+
+.contact-info a:hover {
+  color: #ff3d2e;
+  transition: .45s ease;
+}
+
+.contact-info-2 {
+  padding-bottom: 0;
+  padding-top: 0;
+  display: flex;
+}
+
+.contact-info-2 a {
+  color: rgb(77, 62, 8);
+}
+
+.contact-info-2 a:hover {
+  color: #ff3d2e;
+  transition: .45s ease;
+}
+
+.center {
+	margin-left: auto;
+	margin-right: auto;
+	text-align: center;
+}
+
+.flex {
+	align-items: center;
+	display: flex;
+	flex-direction: row;
+	font-size: 2em;
+	justify-content: space-around;
+	height: 100%;
+}
+/* contact end */
+
+/* scrolling effect */
+.reveal {
+  position: relative;
+  opacity: 0;
+  transform: translateX(-100%);
+  transition: 2s all ease;
+}
+
+.reveal.active {
+  transform: translateY(0);
+  opacity: 1;
+}
+
+.reveal1 {
+  position: relative;
+  opacity: 0;
+  transform: translateX(100%);
+  transition: 2s all ease;
+}
+
+.reveal1.active {
+  transform: translateY(0);
+  opacity: 1;
+}
+/* scrolling effect end */
+
+/* contact box*/
+/* Style inputs */
+input[type=text], select, textarea {
+  width: 90%;
+  padding: 12px;
+  border: 1px solid rgb(104, 96, 96);
+  margin-top: 6px;
+  margin-bottom: 16px;
+  resize: vertical;
+}
+
+input[type=submit] {
+  background-color: #868686;
+  color: white;
+  padding: 12px 20px;
+  border: none;
+  border-radius: 10px;
+  cursor: pointer;
+}
+
+input[type=submit]:hover {
+  background-color: #484848;
+}
+
+/* Style the container/contact section */
+.contact-container {
+  border-radius: 5px;
+  padding: 10px;
+}
+
+/* Create two columns that float next to eachother */
+.column1 {
+  float: left;
+  width: 60%;
+  margin-top: 6px;
+  padding: 20px;
+  background-color: #f2f2f2;
+}
+
+.column2 {
+  width: 30%;
+  max-width: 30%;
+  height: 20%;
+  max-height: 20%;
+  margin: 0;
+  padding: 0;
+  vertical-align: top;
+}
+
+.all-contact-container {
+  display: flex;
+  flex-direction: row;
+}
+
+/* Responsive layout - when the screen is less than 600px wide, make the two columns stack on top of each other instead of next to each other */
+@media screen and (max-width: 600px) {
+  .column, input[type=submit] {
+    width: 100%;
+    margin-top: 0;
+  }
+}
+/* contact box end*/
+
+.learn-more-bttn {
+  background-color: #ffffff00;
+  background-image: none;
+  cursor: pointer;
+  border: transparent;
+  color: rgb(0, 0, 0);
+  font-size: 15px;
+  text-decoration: underline;
+}
+
+.learn-more-bttn:hover {
+  color: red;
+ }
+
+ .learn-more-bttn:focus {
+  outline: 1px dotted;
+  outline: 1px auto -webkit-focus-ring-color;
+ }  
+ 
+ .container {
+    margin: 0;
+    padding: 0;
+    padding-bottom: 15%;
+    background: url(./assets/bottom.png) no-repeat center top ; 
+    -webkit-background-size: cover;
+    -moz-background-size: cover;
+    -o-background-size: cover;
+    background-size: cover;
+    text-align: center;
+  }
+
+/*Unerline text*/
+.underline--magical {
+  background-image: linear-gradient(120deg, #ffe0fd 0%, #ffbefb 100%);
+  background-repeat: no-repeat;
+  background-size: 100% 0.2em;
+  background-position: 0 88%;
+  transition: background-size 0.25s ease-in;
+}
+
+.underline--magical:hover {
+  background-size: 100% 88%;
+}
+/*Underline text end*/
