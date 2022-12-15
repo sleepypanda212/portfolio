@@ -197,7 +197,7 @@
   width: 100%;
   transform: scaleX(0);
   height: 2px;
-  bottom: 0.6vw;
+  bottom: 1vw;
   left: 0;
   background-color: #000000;
   transform-origin: bottom right;
